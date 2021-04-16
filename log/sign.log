@@ -1,0 +1,16 @@
+2021-04-16 13:06:44,205 INFO [(test01:20)] - 正在调用执行数据:{'path': '/api/add_event/', 'method': 'post', 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}, 'param_type': 'data', 'params': {'eid': 1, 'name': '苹果8plus发布会', 'limit': 100, 'status': 1, 'address': '北京', 'start_time': '2019-8-10 12:30:00'}, 'expect': {'status': 10200, 'message': 'add event success'}, 'x_y': [2, 12]}
+2021-04-16 13:06:44,206 INFO [(run_method:47)] - 正在调用运行接口方法
+2021-04-16 13:06:44,207 INFO [(_post:28)] - 正在调用post请求方法
+2021-04-16 13:06:44,479 INFO [(common_assert:6)] - 正在调用断言公共方法
+2021-04-16 13:06:44,549 INFO [(test01:20)] - 正在调用执行数据:{'path': '/api/add_event/', 'method': 'post', 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}, 'param_type': 'data', 'params': {'eid': '', 'name': '苹果8plus发布会', 'limit': 100, 'status': 1, 'address': '上海', 'start_time': '2019-8-10 12:30:00'}, 'expect': {'status': 10021, 'message': 'parameter error'}, 'x_y': [3, 12]}
+2021-04-16 13:06:44,550 INFO [(run_method:47)] - 正在调用运行接口方法
+2021-04-16 13:06:44,550 INFO [(_post:28)] - 正在调用post请求方法
+2021-04-16 13:06:44,557 INFO [(common_assert:6)] - 正在调用断言公共方法
+2021-04-16 13:06:44,629 INFO [(test01:20)] - 正在调用执行数据:{'path': '/api/add_event/', 'method': 'post', 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}, 'param_type': 'data', 'params': {'eid': 2, 'name': '', 'limit': 100, 'status': 1, 'address': '上海', 'start_time': '2019-8-10 12:30:00'}, 'expect': {'status': 10021, 'message': 'parameter error'}, 'x_y': [4, 12]}
+2021-04-16 13:06:44,629 INFO [(run_method:47)] - 正在调用运行接口方法
+2021-04-16 13:06:44,629 INFO [(_post:28)] - 正在调用post请求方法
+2021-04-16 13:06:44,636 INFO [(common_assert:6)] - 正在调用断言公共方法
+2021-04-16 13:06:44,708 INFO [(test01:20)] - 正在调用执行数据:{'path': '/api/add_event/', 'method': 'post', 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}, 'param_type': 'data', 'params': {'eid': 3, 'name': '苹果phone12发布会', 'limit': 100, 'status': 1, 'address': '北京', 'start_time': '2021-18-10 12:30:00'}, 'expect': {'status': 10024, 'message': 'start_time format error. It must be in YYYY-MM-DD HH:MM:SS format.'}, 'x_y': [12, 12]}
+2021-04-16 13:06:44,708 INFO [(run_method:47)] - 正在调用运行接口方法
+2021-04-16 13:06:44,708 INFO [(_post:28)] - 正在调用post请求方法
+2021-04-16 13:06:44,722 INFO [(common_assert:6)] - 正在调用断言公共方法

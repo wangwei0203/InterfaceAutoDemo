@@ -1,0 +1,4 @@
+INFO     root:test01.py:20 正在调用执行数据:{'path': '/api/add_event/', 'method': 'post', 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}, 'param_type': 'data', 'params': {'eid': 2, 'name': '', 'limit': 100, 'status': 1, 'address': '上海', 'start_time': '2019-8-10 12:30:00'}, 'expect': {'status': 10021, 'message': 'parameter error'}, 'x_y': [4, 12]}
+INFO     root:api.py:47 正在调用运行接口方法
+INFO     root:api.py:28 正在调用post请求方法
+INFO     root:common_assert.py:6 正在调用断言公共方法

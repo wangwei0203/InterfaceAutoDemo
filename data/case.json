@@ -1,0 +1,98 @@
+[
+    {
+        "path": "/api/add_event/",
+        "method": "post",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "param_type": "data",
+        "params": {
+            "eid": 1,
+            "name": "苹果8plus发布会",
+            "limit": 100,
+            "status": 1,
+            "address": "北京",
+            "start_time": "2019-8-10 12:30:00"
+        },
+        "expect": {
+            "status": 10200,
+            "message": "add event success"
+        },
+        "x_y": [
+            2,
+            12
+        ]
+    },
+    {
+        "path": "/api/add_event/",
+        "method": "post",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "param_type": "data",
+        "params": {
+            "eid": "",
+            "name": "苹果8plus发布会",
+            "limit": 100,
+            "status": 1,
+            "address": "上海",
+            "start_time": "2019-8-10 12:30:00"
+        },
+        "expect": {
+            "status": 10021,
+            "message": "parameter error"
+        },
+        "x_y": [
+            3,
+            12
+        ]
+    },
+    {
+        "path": "/api/add_event/",
+        "method": "post",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "param_type": "data",
+        "params": {
+            "eid": 2,
+            "name": "",
+            "limit": 100,
+            "status": 1,
+            "address": "上海",
+            "start_time": "2019-8-10 12:30:00"
+        },
+        "expect": {
+            "status": 10021,
+            "message": "parameter error"
+        },
+        "x_y": [
+            4,
+            12
+        ]
+    },
+    {
+        "path": "/api/add_event/",
+        "method": "post",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "param_type": "data",
+        "params": {
+            "eid": 3,
+            "name": "苹果phone12发布会",
+            "limit": 100,
+            "status": 1,
+            "address": "北京",
+            "start_time": "2021-18-10 12:30:00"
+        },
+        "expect": {
+            "status": 10024,
+            "message": "start_time format error. It must be in YYYY-MM-DD HH:MM:SS format."
+        },
+        "x_y": [
+            12,
+            12
+        ]
+    }
+]
